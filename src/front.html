@@ -49,6 +49,7 @@
   .lead h2 { font-family: Georgia, serif; font-size: 20.5px; line-height: 22.5px; margin-top: 3px; letter-spacing: -.3px; }
   .lead p { font-size: 11px; line-height: 13.6px; color: #33333a; margin-top: 3px; }
   .sm h3 { font-family: Georgia, serif; font-size: 13.6px; line-height: 15.6px; margin-top: 2px; letter-spacing: -.2px; }
+  .tag { font: 600 7.6px Bahnschrift, sans-serif; letter-spacing: .08em; color: #8a8478; margin-top: 2px; line-height: 9px; }
   .sm p { font-size: 9.8px; line-height: 12.2px; color: #3a3a42; margin-top: 2px; }
 
   /* bottom */
@@ -58,12 +59,13 @@
   .label span { color: #8a8478; font-weight: 600; letter-spacing: .06em; text-transform: none; font-size: 9.5px; margin-left: 6px; }
   .mapbox { background: #e9e2d2; border: 1px solid #d1c6b0; margin-top: 3px; }
   .briefs { columns: 2; column-gap: 16px; margin-top: 3px; }
-  .briefs div { font-size: 10.3px; line-height: 13.2px; break-inside: avoid; padding: 1px 0 1px 0; border-bottom: 1px dotted #cfc5b1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .briefs i { font-style: normal; display: inline-block; width: 15px; font: 700 9.5px Bahnschrift, sans-serif; color: #fff; background: var(--c); text-align: center; border-radius: 2px; margin-right: 4px; }
+  .briefs div { font-size: 9.9px; line-height: 11.6px; height: 12.5px; break-inside: avoid; padding: 0; border-bottom: 1px dotted #cfc5b1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .briefs i { font-style: normal; display: inline-block; width: 15px; line-height: 10.5px; vertical-align: 0; font: 700 9.5px Bahnschrift, sans-serif; color: #fff; background: var(--c); text-align: center; border-radius: 2px; margin-right: 4px; }
   .briefs b { font-weight: 700; }
   .clock { margin-top: 4px; }
-  .foot { position: absolute; left: 18px; right: 18px; bottom: 6px; font-size: 9.3px; color: #55524b; border-top: 1px solid #b9ae97; padding-top: 3px; display: flex; justify-content: space-between; }
-  .check { margin-top: 5px; background: #f3e4cf; border-left: 3px solid #b8471b; padding: 3px 7px; font-size: 9.6px; line-height: 12.4px; color: #3b2a1c; }
+  .foot { position: absolute; left: 18px; right: 18px; bottom: 5px; font-size: 9px; color: #55524b; }
+  .foot .fl { display: flex; justify-content: space-between; border-top: 1px solid #b9ae97; padding-top: 2px; margin-top: 3px; }
+  .check { background: #f3e4cf; border-left: 3px solid #b8471b; padding: 2px 7px; font-size: 9.4px; line-height: 12px; color: #3b2a1c; }
   .check b { color: #9a3412; letter-spacing: .06em; }
 </style>
 </head>
@@ -81,7 +83,7 @@
 <div class="leads">
 
   <div class="card lead" style="--c: var(--asia)">
-    <svg viewBox="0 0 412 128" height="112" preserveAspectRatio="xMidYMid slice">
+    <svg viewBox="0 0 412 128" height="106" preserveAspectRatio="xMidYMid slice">
       <defs>
         <linearGradient id="dusk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7c88f"/><stop offset="1" stop-color="#fbe7cc"/></linearGradient>
       </defs>
@@ -128,7 +130,7 @@
   </div>
 
   <div class="card lead" style="--c: var(--mide)">
-    <svg viewBox="0 0 280 128" height="112" preserveAspectRatio="xMidYMid slice">
+    <svg viewBox="0 0 280 128" height="106" preserveAspectRatio="xMidYMid slice">
       <rect width="280" height="128" fill="#bfd9e6"/>
       <!-- Iran coast top right, Arabia bottom left -->
       <path d="M60,0 L280,0 L280,70 C250,64 232,58 214,52 C190,44 160,36 140,22 C118,10 92,6 60,0 Z" fill="#e6d3b3"/>
@@ -136,7 +138,7 @@
       <ellipse cx="98" cy="98" rx="7" ry="9" fill="#e6d3b3" stroke="#a69378"/>
       <ellipse cx="226" cy="64" rx="18" ry="5" fill="#d8c29e" stroke="#a69378"/>
       <g font-family="Bahnschrift" font-weight="600" font-size="10" fill="#5a4a32" letter-spacing="1">
-        <text x="150" y="16">IRAN</text><text x="10" y="54">KUWAIT</text><text x="40" y="112">BAHRAIN</text><text x="200" y="82">QESHM</text>
+        <text x="150" y="22">IRAN</text><text x="10" y="54">KUWAIT</text><text x="40" y="112">BAHRAIN</text><text x="200" y="82">QESHM</text>
       </g>
       <!-- drone tracks -->
       <g fill="none" stroke="#b42318" stroke-width="1.6" stroke-dasharray="4 3">
@@ -161,7 +163,7 @@
   </div>
 
   <div class="card lead" style="--c: var(--space)">
-    <svg viewBox="0 0 280 128" height="112" preserveAspectRatio="xMidYMid slice">
+    <svg viewBox="0 0 280 128" height="106" preserveAspectRatio="xMidYMid slice">
       <rect width="280" height="128" fill="#121a33"/>
       <g fill="#fff" opacity=".8"><circle cx="20" cy="18" r="1"/><circle cx="60" cy="40" r=".8"/><circle cx="110" cy="14" r="1.2"/><circle cx="150" cy="44" r=".8"/><circle cx="200" cy="20" r="1"/><circle cx="250" cy="50" r="1"/><circle cx="90" cy="100" r=".9"/><circle cx="170" cy="112" r="1"/><circle cx="230" cy="96" r=".8"/><circle cx="36" cy="80" r=".8"/></g>
       <circle cx="30" cy="66" r="15" fill="#2f7ed8"/><path d="M22,58 C28,56 30,62 26,66 C22,70 26,74 31,73 C36,72 36,64 40,62" fill="#3fa34d"/>
@@ -190,7 +192,7 @@
 <div class="grid">
 
   <div class="card sm" style="--c: var(--mide)">
-    <svg viewBox="0 0 194 66" height="58" preserveAspectRatio="xMidYMid slice">
+    <svg viewBox="0 0 194 66" height="55" preserveAspectRatio="xMidYMid slice">
       <rect width="194" height="66" fill="#efe1c3"/>
       <rect y="48" width="194" height="18" fill="#d8c49c"/>
       <line x1="112" y1="0" x2="112" y2="66" stroke="#e8b400" stroke-width="4" stroke-dasharray="7 5"/>
@@ -206,7 +208,7 @@
   </div>
 
   <div class="card sm" style="--c: var(--euro)">
-    <svg viewBox="0 0 194 66" height="58" preserveAspectRatio="xMidYMid slice">
+    <svg viewBox="0 0 194 66" height="55" preserveAspectRatio="xMidYMid slice">
       <rect width="194" height="66" fill="#283149"/>
       <g fill="#3c4766"><rect x="14" y="30" width="34" height="36"/><rect x="54" y="20" width="40" height="46"/><rect x="100" y="34" width="30" height="32"/><rect x="136" y="26" width="44" height="40"/></g>
       <g fill="#ffd166" opacity=".8"><rect x="60" y="28" width="6" height="6"/><rect x="74" y="28" width="6" height="6"/><rect x="60" y="42" width="6" height="6"/><rect x="142" y="34" width="6" height="6"/><rect x="156" y="46" width="6" height="6"/></g>
@@ -220,7 +222,7 @@
   </div>
 
   <div class="card sm" style="--c: var(--euro)">
-    <svg viewBox="0 0 194 66" height="58" preserveAspectRatio="xMidYMid slice">
+    <svg viewBox="0 0 194 66" height="55" preserveAspectRatio="xMidYMid slice">
       <rect width="194" height="66" fill="#e6ecf8"/>
       <g transform="translate(30,33)"><circle r="22" fill="#003399"/>
         <g fill="#ffcc00"><circle cx="0" cy="-15" r="2"/><circle cx="7.5" cy="-13" r="2"/><circle cx="13" cy="-7.5" r="2"/><circle cx="15" cy="0" r="2"/><circle cx="13" cy="7.5" r="2"/><circle cx="7.5" cy="13" r="2"/><circle cx="0" cy="15" r="2"/><circle cx="-7.5" cy="13" r="2"/><circle cx="-13" cy="7.5" r="2"/><circle cx="-15" cy="0" r="2"/><circle cx="-13" cy="-7.5" r="2"/><circle cx="-7.5" cy="-13" r="2"/></g></g>
@@ -235,7 +237,7 @@
   </div>
 
   <div class="card sm" style="--c: var(--afri)">
-    <svg viewBox="0 0 194 66" height="58" preserveAspectRatio="xMidYMid slice">
+    <svg viewBox="0 0 194 66" height="55" preserveAspectRatio="xMidYMid slice">
       <rect width="194" height="66" fill="#efe4cc"/>
       <path d="M0,30 C40,26 70,40 100,34 C130,28 160,36 194,30" fill="none" stroke="#7a5c3a" stroke-width="2" stroke-dasharray="6 4"/>
       <text x="8" y="14" font-family="Bahnschrift" font-weight="700" font-size="9" fill="#13804a">ERITREA</text>
@@ -250,7 +252,7 @@
   </div>
 
   <div class="card sm" style="--c: var(--euro)">
-    <svg viewBox="0 0 194 66" height="58" preserveAspectRatio="xMidYMid slice">
+    <svg viewBox="0 0 194 66" height="55" preserveAspectRatio="xMidYMid slice">
       <rect width="194" height="66" fill="#f3ece0"/>
       <line x1="10" y1="53" x2="184" y2="53" stroke="#777" stroke-width="1"/>
       <g font-family="Bahnschrift" font-size="8" fill="#444" text-anchor="middle">
@@ -270,7 +272,7 @@
 
 <div class="grid">
   <div class="card sm" style="--c: var(--amer)">
-    <svg viewBox="0 0 194 66" height="58" preserveAspectRatio="xMidYMid slice">
+    <svg viewBox="0 0 194 66" height="55" preserveAspectRatio="xMidYMid slice">
       <rect width="194" height="66" fill="#ece6f7"/>
       <g fill="#fff" stroke="#6b5a8e" stroke-width="1"><rect x="30" y="40" width="80" height="20"/><rect x="40" y="30" width="60" height="10"/><path d="M50,30 Q70,4 90,30 Z"/><rect x="66" y="6" width="8" height="8"/></g>
       <g stroke="#6b5a8e"><line x1="40" y1="44" x2="40" y2="58"/><line x1="52" y1="44" x2="52" y2="58"/><line x1="64" y1="44" x2="64" y2="58"/><line x1="76" y1="44" x2="76" y2="58"/><line x1="88" y1="44" x2="88" y2="58"/><line x1="100" y1="44" x2="100" y2="58"/></g>
@@ -283,7 +285,7 @@
   </div>
 
   <div class="card sm" style="--c: var(--amer)">
-    <svg viewBox="0 0 194 66" height="58" preserveAspectRatio="xMidYMid slice">
+    <svg viewBox="0 0 194 66" height="55" preserveAspectRatio="xMidYMid slice">
       <rect width="194" height="66" fill="#191c24"/>
       <text x="12" y="26" font-family="Bahnschrift" font-weight="700" font-size="16" fill="#9ae6b4">ANT $83</text>
       <text x="12" y="40" font-family="Bahnschrift" font-size="8.5" fill="#c9d1e0">IPO PRICE &#183; NASDAQ, THURSDAY</text>
@@ -298,7 +300,7 @@
   </div>
 
   <div class="card sm" style="--c: var(--amer)">
-    <svg viewBox="0 0 194 66" height="58" preserveAspectRatio="xMidYMid slice">
+    <svg viewBox="0 0 194 66" height="55" preserveAspectRatio="xMidYMid slice">
       <rect width="194" height="66" fill="#f2ebe0"/>
       <g transform="translate(14,12)"><rect width="48" height="30" fill="#fff"/><g fill="#b22234"><rect width="48" height="4.3"/><rect y="8.6" width="48" height="4.3"/><rect y="17.2" width="48" height="4.3"/><rect y="25.8" width="48" height="4.2"/></g><rect width="20" height="16" fill="#3c3b6e"/></g>
       <g transform="translate(132,12)"><rect width="48" height="10" fill="#ffcc00"/><rect y="10" width="48" height="10" fill="#00247d"/><rect y="20" width="48" height="10" fill="#cf142b"/><g fill="#fff"><circle cx="16" cy="15" r="1"/><circle cx="20" cy="13" r="1"/><circle cx="24" cy="12.5" r="1"/><circle cx="28" cy="13" r="1"/><circle cx="32" cy="15" r="1"/></g></g>
@@ -311,7 +313,7 @@
   </div>
 
   <div class="card sm" style="--c: var(--asia)">
-    <svg viewBox="0 0 194 66" height="58" preserveAspectRatio="xMidYMid slice">
+    <svg viewBox="0 0 194 66" height="55" preserveAspectRatio="xMidYMid slice">
       <rect width="194" height="66" fill="#f4e4d6"/>
       <g fill="#a8a29e"><path d="M16,62 L16,30 L40,20 L40,30 L64,20 L64,30 L88,20 L88,62 Z"/></g>
       <rect x="28" y="40" width="48" height="22" fill="#57534e"/><g stroke="#78716c"><line x1="28" y1="46" x2="76" y2="46"/><line x1="28" y1="52" x2="76" y2="52"/><line x1="28" y1="58" x2="76" y2="58"/></g>
@@ -325,7 +327,7 @@
   </div>
 
   <div class="card sm" style="--c: var(--ocea)">
-    <svg viewBox="0 0 194 66" height="58" preserveAspectRatio="xMidYMid slice">
+    <svg viewBox="0 0 194 66" height="55" preserveAspectRatio="xMidYMid slice">
       <rect width="194" height="66" fill="#1d1630"/>
       <g transform="translate(22,18)"><rect x="0" y="6" width="70" height="30" rx="15" fill="#e9e3ff"/><rect x="12" y="17" width="12" height="4" fill="#1d1630"/><rect x="16" y="13" width="4" height="12" fill="#1d1630"/><circle cx="52" cy="16" r="3" fill="#f72585"/><circle cx="58" cy="22" r="3" fill="#4cc9f0"/></g>
       <rect x="110" y="16" width="70" height="26" rx="4" fill="#000" stroke="#f72585"/><text x="145" y="35" text-anchor="middle" font-family="Bahnschrift" font-weight="700" font-size="16" fill="#f72585">00:00</text>
@@ -348,13 +350,12 @@
   <div>
     <div class="label">Also on Wednesday 18 November</div>
     <div class="briefs" id="briefs"></div>
-    <div class="check"><b>DATE CHECK</b> &nbsp;Left off because they were first reported on Tuesday 17 November: Nvidia's results, the collapse of a Crimea bridge span, PAHO's ruling on US measles and Pew's religion forecast.</div>
   </div>
 </div>
 
 <div class="foot">
-  <div>Every story here happened, or was first reported, on Wednesday 18 November 2026. Claims by warring sides are attributed. Original drawings.</div>
-  <div>Sources: Reuters &middot; AP &middot; AFP &middot; BBC &middot; Guardian &middot; Al Jazeera &middot; NASA &middot; ONS &middot; Stats SA &middot; Fed</div>
+  <div class="check"><b>DATE CHECK</b> &nbsp;Left off because they were first reported on Tuesday 17 November: Nvidia's results, the collapse of a Crimea bridge span, PAHO's ruling on US measles and Pew's religion forecast.</div>
+  <div class="fl"><span>Every story here happened, or was first reported, on Wednesday 18 November 2026. Claims by warring sides are attributed. Original drawings.</span><span>Sources: Reuters &middot; AP &middot; AFP &middot; BBC &middot; Guardian &middot; Al Jazeera &middot; NASA &middot; ONS &middot; Stats SA &middot; Fed</span></div>
 </div>
 
 <script>
@@ -377,24 +378,35 @@ const BRIEFS = [
   ['amer', 'Washington', 'Fed minutes point to more rate rises', -77.0, 38.9],
   ['amer', 'Alaska', 'Peltola win gives Democrats a 56th Senate seat', -150.0, 61.2],
   ['mide', 'Antalya', '30 nations push a fossil-fuel treaty at COP31', 30.7, 36.9],
+  ['mide', 'Hormuz', 'US official: ship insurance now up to $64m', 56.3, 26.6],
   ['mide', 'Jerusalem', 'Knesset elects Eisenkot ally as speaker', 35.2, 31.8],
   ['mide', 'Yemen', 'Coalition says it hit 60 Houthi targets', 45.0, 12.8],
+  ['mide', 'Baghdad', 'Quds Force chief Qaani holds talks in Iraq', 44.4, 33.3],
+  ['mide', 'Lebanon', 'World Bank: rebuilding is making slow progress', 35.5, 33.9],
+  ['mide', 'Israel', 'Court extends Gaza doctor Abu Safiya’s detention', 34.8, 32.1],
   ['afri', 'Geneva', 'WHO keeps Congo Ebola a global emergency', 6.1, 46.2],
+  ['afri', 'Guinea', '1,263 held in illegal-mining crackdown', -9.7, 10.4],
+  ['afri', 'South Africa', 'Aid groups: protests cut migrants’ HIV care', 28.0, -26.2],
   ['afri', 'Accra', 'Ghana plans curbs on raw cashew exports', -0.2, 5.6],
   ['ocea', 'Canberra', 'Australia sanctions Israeli settlers', 149.1, -35.3],
   ['ocea', 'Australia', 'Wages grow at fastest pace since 2023', 151.2, -33.9],
   ['asia', 'Kashmir', 'Indian forces kill a militant commander', 75.0, 33.6],
   ['asia', 'Chattogram', 'Yunus’s ancestral home set on fire', 91.8, 22.3],
   ['asia', 'Bay of Bengal', 'Cyclone Akvan nears India’s coast', 86.0, 15.5],
+  ['asia', 'Thailand', 'Water alert over arsenic from Myanmar mines', 99.9, 20.4],
   ['asia', 'Mumbai', 'Modi meets Prince William and Kate', 72.9, 19.1],
   ['amer', 'Haiti', 'Salvadoran troops raze a gang boss’s house', -72.3, 18.6],
-  ['amer', 'Brazil', 'Rare images of an isolated Amazon people', -70.0, -9.0],
+  ['amer', 'Peru', 'Tumbes river passes its red-alert level', -80.5, -3.6],
+  ['amer', 'US', 'ICE detains Venezuelan boxer Jorge Linares', -95.4, 29.8],
   ['amer', 'US', 'Waymo pulls robotaxis off freeways nationwide', -122.1, 37.4],
+  ['amer', 'Senate', 'Democrats press Apple, Google on “nudify” apps', -77.0, 38.9],
   ['amer', 'Washington', 'Rubio sees “zero evidence” outages are linked', -77.0, 38.9],
   ['amer', 'Florida', 'Cal-Maine to cull 1.8m hens over bird flu', -81.7, 28.0],
   ['amer', 'California', 'Russian charged with spying on Palantir', -122.1, 37.4],
   ['euro', 'Ireland', 'Man charged with axing a US military plane', -8.9, 52.7],
   ['euro', 'Madrid', 'Court probes allegations against Julio Iglesias', -3.7, 40.4],
+  ['euro', 'London', 'Lammy urges Burnham to back rejoining the EU', -0.1, 51.5],
+  ['euro', 'Glastonbury', 'Styles, Eilish, Fender, Cher to headline 2027', -2.6, 51.1],
   ['euro', 'Science', 'Viagra-like pill slows Alzheimer’s decline', -0.1, 51.5],
   ['euro', 'Cambridge', '“Human” is the word of the year', 0.1, 52.2],
   ['euro', 'Turin', 'Alcaraz beats Medvedev at the ATP Finals', 7.7, 45.1],
@@ -410,11 +422,21 @@ for (const k of ['asia', 'mide', 'euro', 'afri', 'amer', 'ocea', 'space']) {
   if (!counts[k]) continue;
   const d = document.createElement('div');
   d.style.background = REG[k][1];
-  d.style.flex = String(counts[k] + 1.2);
+  d.style.flex = String(counts[k] + 4);
   d.textContent = REG[k][0].toUpperCase() + ' ' + counts[k];
   bar.appendChild(d);
 }
 document.querySelector('.top b').textContent = total + ' stories';
+
+// ---------- who reported each illustrated story (cards 4-13) ----------
+const CARD_SOURCES = ['BBC · GUARDIAN', 'AFP · AL JAZEERA', 'GUARDIAN · EU', 'REUTERS · ACLED', 'ONS · STATS SA',
+  'GUARDIAN · AL JAZEERA', 'GUARDIAN · BBC', 'AP · AFP', 'DAILY STAR', 'FORBES · VARIETY'];
+document.querySelectorAll('.card.sm').forEach((card, i) => {
+  const tag = document.createElement('div');
+  tag.className = 'tag';
+  tag.textContent = 'REPORTED BY ' + CARD_SOURCES[i];
+  card.querySelector('.t').appendChild(tag);
+});
 
 // ---------- briefs ----------
 const bl = document.getElementById('briefs');
